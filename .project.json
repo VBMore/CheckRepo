@@ -1,0 +1,29 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "https://api.cf.eu10.hana.ondemand.com",
+		"Organization": "209ea4d1-470a-44bb-b508-bff63df72a2e",
+		"Space": "be3f4771-402f-4585-a9f6-e493d214d76c"
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/209ea4d1-470a-44bb-b508-bff63df72a2e/space/be3f4771-402f-4585-a9f6-e493d214d76c",
+		"AppId": "com.sap.mdk.demo",
+		"Destination": []
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": ""
+	},
+	"LCAP": {
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true
+	}
+}

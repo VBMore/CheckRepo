@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Failed to Save Customer Updates",
+	"Title": "Update Customer",
+	"OKCaption": "OK"
+}

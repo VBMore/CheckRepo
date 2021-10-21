@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Failed to create New Cutomer",
+	"Title": "Create Customer",
+	"OKCaption": "OK"
+}

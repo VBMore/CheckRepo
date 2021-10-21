@@ -1,0 +1,75 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ContactCell",
+					"Target": {
+						"Service": "/DemoSampleApp/Services/SampleServiceV2.service",
+						"EntitySet": "Customers",
+						"QueryOptions": "$orderby=LastName"
+					},
+					"_Name": "SectionContactCell0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					},
+					"ContactCell": {
+						"ContextMenu": {
+							"PerformFirstActionWithFullSwipe": true,
+							"Items": [
+							]
+						},
+						"DetailImage": "/DemoSampleApp/Images/TeamsLogo.png",
+						"Headline": "{LastName}",
+						"Subheadline": "{FirstName}",
+						"Description": "{City}",
+						"OnPress": "/DemoSampleApp/Rules/OpenTeams.js",
+						"ActivityItems": [
+							{
+								"ActivityType": "Phone",
+								"ActivityValue": "{PhoneNumber}",
+								"_Name": "SectionContactCell0ActivityItem1"
+							},
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "{EmailAddress}",
+								"_Name": "SectionContactCell0ActivityItem3"
+							},
+							{
+								"ActivityType": "VideoCall",
+								"ActivityValue": "",
+								"_Name": "SectionContactCell0ActivityItem4"
+							}
+						]
+					},
+					"Search": {
+						"Enabled": true
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customer_List",
+	"Caption": "Customer_List",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "+",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomer_Create.action"
+			}
+		],
+		"_Name": "ActionBar0"
+	}
+}
